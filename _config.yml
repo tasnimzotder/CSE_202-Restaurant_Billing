@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: CSE 202 - Restaurent Billing
 description: A C++ college project on Restaurent Billing
+show_downloads: true
