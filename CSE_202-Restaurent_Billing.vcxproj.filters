@@ -21,9 +21,21 @@
     <ClCompile Include="Restaurent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RestAdmin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BillDesk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Restaurent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RestAdmin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BillDesk.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
