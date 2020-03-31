@@ -1,4 +1,4 @@
-# CSE_202-Restaurent_Billing
+# CSE_202-Restaurant_Billing
 
 ## Bill Output
 
