@@ -138,9 +138,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BillDesk.cpp" />
-    <ClCompile Include="RestAdmin.cpp" />
-    <ClCompile Include="Restaurent.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
