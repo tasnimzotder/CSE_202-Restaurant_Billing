@@ -1,6 +1,6 @@
 #pragma once
-#include "Restaurent.h"
-class RestAdmin : public Restaurent {
+#include "Restaurant.h"
+class RestAdmin : public Restaurant {
    public:
     void addProduct(string productCode, string product, float price) {
         productCodes[productCount] = productCode;

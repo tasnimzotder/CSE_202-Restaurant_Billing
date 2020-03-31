@@ -10,7 +10,7 @@ BillDesk Desk;
 string query = "stay";
 
 void welcomeMessage() {
-    cout << "\n\tWelcome to Online Restaurant Booking System " << endl;
+    cout << "\n\t*** Welcome to Restaurant Booking System ***" << endl;
     cout << "\t\tA restaurant billing application" << endl;
     cout << "\n\t\tAuthor: Tasnim Zotder" << endl;
     cout << "\t\tInst: Lovely Professional University" << endl;
@@ -21,7 +21,8 @@ void welcomeMessage() {
 
 void headerAdminMessage() {
     cout << "\t\t\t"
-         << "Online Restaurent Booking System - Admin" << endl;
+         << "*** Restaurant Booking System - Admin ***\n"
+         << endl;
     cout << "\t\t\t\t"
          << "---Commands---" << endl;
     cout << "1. 'add' - To add new product [Product_Code, Product_Name, Price]" << endl;
@@ -38,7 +39,8 @@ void headerAdminMessage() {
 
 void headerBillMessage() {
     cout << "\t\t\t"
-         << "Online Restaurent Booking System - Bill Desk" << endl;
+         << "*** Restaurant Booking System - Bill Desk ***\n"
+         << endl;
     cout << "\t\t\t\t"
          << "---Commands---" << endl;
     cout << "1. 'add' - To add new product [Product_Code]" << endl;
@@ -116,7 +118,8 @@ void runAdminCommands(string query) {
         runAdminCommands(query);
     } else {
         system("CLS");
-        cout << "See you again!\n" << endl;
+        cout << "See you again!\n"
+             << endl;
     }
 }
 
@@ -166,7 +169,8 @@ void runBillCommands(string query) {
         runBillCommands(query);
     } else {
         system("CLS");
-        cout << "See you again!\n" << endl;
+        cout << "See you again!\n"
+             << endl;
     }
 }
 

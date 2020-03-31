@@ -144,7 +144,7 @@
   <ItemGroup>
     <ClInclude Include="BillDesk.h" />
     <ClInclude Include="RestAdmin.h" />
-    <ClInclude Include="Restaurent.h" />
+    <ClInclude Include="Restaurant.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

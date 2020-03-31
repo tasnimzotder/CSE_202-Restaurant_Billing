@@ -1,9 +1,10 @@
 #pragma once
-#include "Restaurent.h"
+#include "Restaurant.h"
 
-class BillDesk : public Restaurent {
+class BillDesk : public Restaurant {
    private:
     string selectedProducts[5];
+    string selectedProdCodes[5];
     float billPriceList[5];
     float billAmount;
     int billProdCount;
@@ -31,6 +32,7 @@ class BillDesk : public Restaurent {
         int index = findIndex(productCode);
 
         selectedProducts[billProdCount] = productList[index];
+        selectedProdCodes[billProdCount] = productCodes[index];
         billPriceList[billProdCount] = priceList[index];
         billAmount += priceList[index];
         billProdCount++;
@@ -40,15 +42,16 @@ class BillDesk : public Restaurent {
     }
 
     void billDeleteProduct(string productCode) {
-        int index = findIndex(productCode);
+        //int index = findIndex(productCode);
         int billIndex = findBillIndex(productCode);
 
         for (int i = billIndex; i < billProdCount - 1; i++) {
             selectedProducts[i] = selectedProducts[i + 1];
+            selectedProdCodes[i] = selectedProdCodes[i + 1];
             billPriceList[i] = priceList[i + 1];
         }
 
-        billAmount -= priceList[index];
+        billAmount -= billPriceList[billIndex];
         billProdCount--;
 
         cout << "\tProduct removed!" << endl;

@@ -2,16 +2,12 @@
 #include <iostream>
 using namespace std;
 
-class Restaurent {
+class Restaurant {
    protected:
     string productCodes[10] = {"ICCRM", "RCBWL", "CKNRL"};
     string productList[10] = {"Ice_Cream", "Rice_Bowl", "Chicken_Roll"};
     float priceList[10] = {65, 50, 70};
     int productCount = 3;
-
-    // string selectedProducts[5];
-    // float billAmount;
-    // int billProdCount;
 
    public:
     int findIndex(string productCode) {
