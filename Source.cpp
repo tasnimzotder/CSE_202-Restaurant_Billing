@@ -10,7 +10,11 @@ BillDesk Desk;
 string query = "stay";
 
 void welcomeMessage() {
-    cout << "Welcome to Online Restaurent Booking System " << endl;
+    cout << "\n\tWelcome to Online Restaurant Booking System " << endl;
+    cout << "\t\tA restaurant billing application" << endl;
+    cout << "\n\t\tAuthor: Tasnim Zotder" << endl;
+    cout << "\t\tInst: Lovely Professional University" << endl;
+    cout << "\n\t\tCopyright: Tasnim Zotder | 2020" << endl;
     cout << "\n\n"
          << "Please enter 'admin' for Adminstration Access or 'desk' for Billing Access" << endl;
 }
@@ -112,7 +116,7 @@ void runAdminCommands(string query) {
         runAdminCommands(query);
     } else {
         system("CLS");
-        cout << "See you again!" << endl;
+        cout << "See you again!\n" << endl;
     }
 }
 
@@ -162,7 +166,7 @@ void runBillCommands(string query) {
         runBillCommands(query);
     } else {
         system("CLS");
-        cout << "See you again!" << endl;
+        cout << "See you again!\n" << endl;
     }
 }
 
@@ -170,6 +174,8 @@ int main() {
     welcomeMessage();
 
     cin >> query;
+    system("CLS");
+
     if (query == "admin") {
         runAdminCommands(query);
     } else if (query == "desk") {
