@@ -24,7 +24,7 @@ This is a C++ application. The project was given as a semister project of B Tech
    class BillDesk : public Restaurent {}
    ```
 
-   > Here Multiple Inheritance is used.
+   > Here `Hierarchical Inheritance` is used.
 
 2. `Restaurant` and `RestAdmin` are included in the main source file and input commands are executed using recursion.
 
