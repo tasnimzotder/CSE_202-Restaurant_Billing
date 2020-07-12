@@ -1,5 +1,13 @@
 # CSE 202 - Restaurant Billing
 
+
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/tasnimzotder/CSE_202-Restaurant_Billing?include_prereleases)
+![GitHub top language](https://img.shields.io/github/languages/top/tasnimzotder/CSE_202-Restaurant_Billing)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/tasnimzotder/CSE_202-Restaurant_Billing)
+![GitHub All Releases](https://img.shields.io/github/downloads/tasnimzotder/CSE_202-Restaurant_Billing/total)
+
+
+
 ## Getting Started
 
 This is a C++ application. The project was given as a semister project of B Tech Computer Science stream in **[Lovely Professional University, Punjab](https://www.lpu.in)**. The goal was to make a **Restaurant Billing System** in which the restaurant admin can view, add, update and delete the products. And the billing desk can view, add, delete and generate the products bill.
