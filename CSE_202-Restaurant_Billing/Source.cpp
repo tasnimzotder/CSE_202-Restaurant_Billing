@@ -9,16 +9,18 @@ BillDesk Desk;
 
 string query = "stay";
 
+// Print Welcome Message No input
 void welcomeMessage() {
     cout << "\n\t*** Welcome to Restaurant Booking System ***" << endl;
     cout << "\t\tA restaurant billing application" << endl;
     cout << "\n\t\tAuthor: Tasnim Zotder" << endl;
     cout << "\t\tInst: Lovely Professional University" << endl;
     cout << "\n\t\tCopyright: Tasnim Zotder | 2020" << endl;
-    cout << "\n\n"
+    cout << "\n\n"-
         << "Please enter 'admin' for Adminstration Access or 'desk' for Billing Access" << endl;
 }
 
+// Message for Admin users
 void headerAdminMessage() {
     cout << "\t\t\t"
         << "*** Restaurant Booking System - Admin ***\n"
@@ -37,6 +39,7 @@ void headerAdminMessage() {
         << endl;
 }
 
+// Message for Desk users
 void headerBillMessage() {
     cout << "\t\t\t"
         << "*** Restaurant Booking System - Bill Desk ***\n"
@@ -55,6 +58,7 @@ void headerBillMessage() {
         << endl;
 }
 
+// Commands for Admins
 void runAdminCommands(string query) {
     headerAdminMessage();
 
@@ -130,6 +134,7 @@ void runAdminCommands(string query) {
     }
 }
 
+// Commands for Desk
 void runBillCommands(string query) {
     headerBillMessage();
 

@@ -1,10 +1,16 @@
 #include "BillDesk.h"
 
+// initilize bill desk
 BillDesk::BillDesk() {
     billAmount = 0;
     billProdCount = 0;
 }
 
+/**
+* Get index of product
+* productCode: String of the code the user entered
+* returns: int Index
+*/
 int BillDesk::findBillIndex(string productCode) {
     int index = 0;
 
@@ -18,6 +24,10 @@ int BillDesk::findBillIndex(string productCode) {
     return index;
 }
 
+/**
+* add product to bill
+* productCode: code of product
+*/
 void BillDesk::billAddProduct(string productCode) {
     int index = findIndex(productCode);
 
@@ -31,6 +41,10 @@ void BillDesk::billAddProduct(string productCode) {
     cout << "\tItem: " << billProdCount << "\tAmount: " << billAmount << endl;
 }
 
+/**
+* delete item from bill list
+* productCode: code of product
+*/
 void BillDesk::billDeleteProduct(string productCode) {
     //int index = findIndex(productCode);
     int billIndex = findBillIndex(productCode);
@@ -48,6 +62,9 @@ void BillDesk::billDeleteProduct(string productCode) {
     cout << "\tItem: " << billProdCount << "\tAmount: " << billAmount << endl;
 }
 
+/**
+* prints bill to console
+*/
 void BillDesk::generateBill() {
     cout << "\n\t\t\tYour Product Bill" << endl;
     cout << "\t\t\t_________________\n\n"

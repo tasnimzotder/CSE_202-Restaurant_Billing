@@ -1,5 +1,11 @@
 #include "RestAdmin.h"
 
+/**
+* add product to list of products
+* productcode: Product code
+* product: Name of product
+* price: Product price
+*/
 void RestAdmin::addProduct(string productCode, string product, float price) {
     productCodes[productCount] = productCode;
     productList[productCount] = product;
@@ -7,6 +13,10 @@ void RestAdmin::addProduct(string productCode, string product, float price) {
     productCount++;
 }
 
+/**
+* deletes a product from list of products
+* productCode: product code
+*/
 void RestAdmin::deleteProduct(string productCode) {
     int index = findIndex(productCode);
 
@@ -20,6 +30,12 @@ void RestAdmin::deleteProduct(string productCode) {
     cout << "\tProduct " << productCode << " deleted!" << endl;
 }
 
+/**
+* edits existing product
+* productCode: product code
+* product: users New/Old product name
+* price users New/Old product price
+*/
 void RestAdmin::updateProduct(string productCode, string product, float price) {
     int index = 0;
 

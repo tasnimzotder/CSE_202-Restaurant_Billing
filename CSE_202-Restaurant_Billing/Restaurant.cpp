@@ -1,5 +1,10 @@
 #include "Restaurant.h"
 
+/**
+* Get index of product
+* productCode: String of the code the user entered
+* returns: int Index
+*/
 int Restaurant::findIndex(string productCode) {
     int index = 0;
 
@@ -13,6 +18,7 @@ int Restaurant::findIndex(string productCode) {
     return index;
 }
 
+// print table of products
 void Restaurant::showProducts() {
     cout << "\t\t"
         << "Code\t"
@@ -28,6 +34,7 @@ void Restaurant::showProducts() {
     }
 }
 
+// print user selected product given the product code
 void Restaurant::searchOne(string productCode) {
     int index = findIndex(productCode);
 
