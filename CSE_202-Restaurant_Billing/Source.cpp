@@ -16,7 +16,7 @@ void welcomeMessage() {
     cout << "\n\t\tAuthor: Tasnim Zotder" << endl;
     cout << "\t\tInst: Lovely Professional University" << endl;
     cout << "\n\t\tCopyright: Tasnim Zotder | 2020" << endl;
-    cout << "\n\n"-
+    cout << "\n\n"
         << "Please enter 'admin' for Adminstration Access or 'desk' for Billing Access" << endl;
 }
 
