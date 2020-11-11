@@ -1,8 +1,6 @@
 #pragma once
 #include "Inventory.h"
-
-/*
-class BillDesk : public Inventory {
+class InvAdmin : public Inventory {
 private:
     string selectedProducts[5];
     string selectedProdCodes[5];
@@ -11,11 +9,15 @@ private:
     int billProdCount;
 
 public:
-    BillDesk();
+    InvAdmin Bill();
 
     int findBillIndex(string);
     void billAddProduct(string);
     void billDeleteProduct(string);
     void generateBill();
+
+public:
+    void addProduct(string, string, float);
+    void deleteProduct(string);
+    void updateProduct(string, string, float);
 };
-*/

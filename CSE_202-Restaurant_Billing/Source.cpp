@@ -1,11 +1,11 @@
 #include <iostream>
 
 #include "BillDesk.h"
-#include "RestAdmin.h"
+#include "InvAdmin.h"
 using namespace std;
 
-RestAdmin Admin;
-BillDesk Desk;
+InvAdmin Admin;
+InvAdmin Bill;
 
 string query = "stay";
 
@@ -161,7 +161,7 @@ void runBillCommands(string query) {
             cout << "Please Enter Product Code: " << endl;
             cin >> productCode;
 
-            Desk.billAddProduct(productCode);
+            Bill.billAddProduct(productCode);
         }
         else if (query == "delete") {
             string productCode;
@@ -169,10 +169,10 @@ void runBillCommands(string query) {
             cout << "Please Enter Product Code: " << endl;
             cin >> productCode;
 
-            Desk.billDeleteProduct(productCode);
+            Bill.billDeleteProduct(productCode);
         }
         else if (query == "bill") {
-            Desk.generateBill();
+            Bill.generateBill();
         }
         else {
             cout << "\t"

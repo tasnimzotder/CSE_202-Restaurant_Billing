@@ -18,24 +18,18 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Restaurant.cpp">
+    <ClCompile Include="Inventory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RestAdmin.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BillDesk.cpp">
+    <ClCompile Include="InvAdmin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Restaurant.h">
+    <ClInclude Include="Inventory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RestAdmin.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BillDesk.h">
+    <ClInclude Include="InvAdmin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

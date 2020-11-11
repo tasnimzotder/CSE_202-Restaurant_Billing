@@ -1,7 +1,59 @@
-#include "BillDesk.h"
+#include "InvAdmin.h"
 
+/**
+* add product to list of products
+* productcode: Product code
+* product: Name of product
+* price: Product price
+*/
+void InvAdmin::addProduct(string productCode, string product, float price) {
+    productCodes[productCount] = productCode;
+    productList[productCount] = product;
+    priceList[productCount] = price;
+    productCount++;
+}
+
+/**
+* deletes a product from list of products
+* productCode: product code
+*/
+void InvAdmin::deleteProduct(string productCode) {
+    int index = findIndex(productCode);
+
+    for (int i = index; i < productCount - 1; i++) {
+        productCodes[i] = productCodes[i + 1];
+        productList[i] = productList[i + 1];
+        priceList[i] = priceList[i + 1];
+    }
+
+    productCount--;
+    cout << "\tProduct " << productCode << " deleted!" << endl;
+}
+
+/**
+* edits existing product
+* productCode: product code
+* product: users New/Old product name
+* price users New/Old product price
+*/
+void InvAdmin::updateProduct(string productCode, string product, float price) {
+    int index = 0;
+
+    for (int i = 0; i < productCount; i++) {
+        if (productCodes[i] == productCode) {
+            index = i;
+            break;
+        }
+    }
+
+    productList[index] = product;
+    priceList[index] = price;
+}
+
+// Functions under here are the once moved from BillDesk.cpp
 // initilize bill desk
-BillDesk::BillDesk() {
+InvAdmin InvAdmin::Bill()
+{
     billAmount = 0;
     billProdCount = 0;
 }
@@ -11,7 +63,7 @@ BillDesk::BillDesk() {
 * productCode: String of the code the user entered
 * returns: int Index
 */
-int BillDesk::findBillIndex(string productCode) {
+int InvAdmin::findBillIndex(string productCode) {
     int index = 0;
 
     for (int i = 0; i < billProdCount; i++) {
@@ -28,7 +80,7 @@ int BillDesk::findBillIndex(string productCode) {
 * add product to bill
 * productCode: code of product
 */
-void BillDesk::billAddProduct(string productCode) {
+void InvAdmin::billAddProduct(string productCode) {
     int index = findIndex(productCode);
 
     selectedProducts[billProdCount] = productList[index];
@@ -45,7 +97,7 @@ void BillDesk::billAddProduct(string productCode) {
 * delete item from bill list
 * productCode: code of product
 */
-void BillDesk::billDeleteProduct(string productCode) {
+void InvAdmin::billDeleteProduct(string productCode) {
     //int index = findIndex(productCode);
     int billIndex = findBillIndex(productCode);
 
@@ -65,7 +117,7 @@ void BillDesk::billDeleteProduct(string productCode) {
 /**
 * prints bill to console
 */
-void BillDesk::generateBill() {
+void InvAdmin::generateBill() {
     cout << "\n\t\t\tYour Product Bill" << endl;
     cout << "\t\t\t_________________\n\n"
         << endl;

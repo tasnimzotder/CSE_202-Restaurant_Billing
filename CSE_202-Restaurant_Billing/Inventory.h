@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-class Restaurant {
+class Inventory {
 protected:
     string productCodes[10] = { "ICCRM", "RCBWL", "CKNRL" };
     string productList[10] = { "Ice_Cream", "Rice_Bowl", "Chicken_Roll" };

@@ -140,15 +140,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BillDesk.cpp" />
-    <ClCompile Include="RestAdmin.cpp" />
-    <ClCompile Include="Restaurant.cpp" />
+    <ClCompile Include="InvAdmin.cpp" />
+    <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BillDesk.h" />
-    <ClInclude Include="RestAdmin.h" />
-    <ClInclude Include="Restaurant.h" />
+    <ClInclude Include="InvAdmin.h" />
+    <ClInclude Include="Inventory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
